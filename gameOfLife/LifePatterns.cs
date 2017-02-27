@@ -12,5 +12,10 @@
             {true, false, true},
             {true, true, true},
         };
+        public static readonly bool[,] Methusela =  {
+            {false, true, false},
+            {true, true, true},
+            {true, false, false},
+        };
     }
 }
