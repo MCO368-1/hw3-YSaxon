@@ -7,7 +7,7 @@ using System.Reflection;
 using FsAlg.Generic;
 using Microsoft.FSharp.Core;
 using NUnit.Framework.Constraints;
-using StarMathLib;
+
 using VectorClass;
 using Microsoft.FSharp.Collections;
 
