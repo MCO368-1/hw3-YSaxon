@@ -118,8 +118,8 @@ namespace gameOfLife
         public void SetPortionOfBoard(bool[,] newField, int xOfTopLeftCorner = 0, int yOfTopLeftCorner = 0)
         {
             if (newField == null) throw new ArgumentNullException(nameof(newField));
-            if (xOfTopLeftCorner <= 0) throw new ArgumentOutOfRangeException(nameof(xOfTopLeftCorner));
-            if (yOfTopLeftCorner <= 0) throw new ArgumentOutOfRangeException(nameof(yOfTopLeftCorner));
+            if (xOfTopLeftCorner < 0) throw new ArgumentOutOfRangeException(nameof(xOfTopLeftCorner));
+            if (yOfTopLeftCorner < 0) throw new ArgumentOutOfRangeException(nameof(yOfTopLeftCorner));
             if (newField.GetLength(0) + xOfTopLeftCorner > ColsX)
                 throw new ArgumentOutOfRangeException(nameof(newField));
             if (newField.GetLength(1) + yOfTopLeftCorner > RowsY)
